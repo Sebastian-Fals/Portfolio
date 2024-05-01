@@ -1,0 +1,104 @@
+@keyframes left_to_position_image{
+    to{
+        left: 300px;
+    }
+}
+@keyframes right_to_position_title{
+    from{
+        right: -1000px;
+    }to{
+        right: 0;
+    }
+}
+@keyframes up_and_down{
+    to{
+        transform: translateY(5px);
+    }
+}
+
+header{
+    height: 100dvh;
+    .header{
+        background: rgb(0,0,17);
+    background: -moz-linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(27,1,71,1) 55%, rgba(97,0,120,1) 100%);
+    background: -webkit-linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(27,1,71,1) 55%, rgba(97,0,120,1) 100%);
+    background: linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(27,1,71,1) 55%, rgba(97,0,120,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000011",endColorstr="#610078",GradientType=1);
+        height: 90%;
+        .title{
+            display: flex;
+            float: right;
+            margin-right: 150px;
+            justify-content: center;
+            height: 100%;
+            flex-direction: column;
+            div{
+                position: relative;
+                animation: right_to_position_title 1s ease-out 500ms both;
+            }
+            img{
+                border-radius: 100%;
+                width: 150px;
+                position: absolute;
+                left: -150px;
+                animation: left_to_position_image 1s ease-out 500ms forwards;
+            }
+            h1{
+                padding: 0;
+                margin: 0;
+                color: white;
+                font-size: 64px;
+            }
+            h3{
+                padding: 0;
+                margin: 0;
+                color: white;
+            }
+            .row{
+                display: flex;
+                margin-top: 10px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                margin-right: 7px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                font-size: 17px;
+            }
+            a:hover{
+                color: #000000;
+            }
+            .curriculum{
+                background-color: #333;
+                padding: 5px;
+                border-radius: 5px;
+                width: fit-content;
+                fa-icon{
+                    margin-left: 5px;
+                }
+            }
+            .curriculum:hover{
+                background-color: #000000;
+                color: white;
+            }
+        }
+    }
+    .shortcut{
+        display: flex;
+        height: 10%;
+        align-items: center;
+        justify-content: center;
+        a{
+            animation: up_and_down 300ms infinite 500ms alternate;
+            text-decoration: none;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
