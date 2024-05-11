@@ -1,0 +1,30 @@
+#proyectos{
+    min-height: 100dvh;
+    color: white;
+    text-align: left;
+    padding: 15px;
+    box-sizing: border-box;
+    h2{
+        margin: 0;
+        font-size: 30px;
+        font-weight: 100;
+        text-align: center;
+    }
+    .proyectos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+        width: 100%;
+        app-proyecto{
+            border-radius: 5px;
+            width: 98%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            justify-content: space-around;
+        }
+    }
+}

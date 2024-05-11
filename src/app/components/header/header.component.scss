@@ -1,13 +1,14 @@
 @keyframes left_to_position_image{
     to{
-        left: 300px;
+        left: 20dvw;
     }
 }
 @keyframes right_to_position_title{
     from{
-        right: -1000px;
-    }to{
-        right: 0;
+        left: 100dvw;
+    }
+    to{
+        left: 35dvw;
     }
 }
 @keyframes up_and_down{
@@ -20,15 +21,13 @@ header{
     height: 100dvh;
     .header{
         background: rgb(0,0,17);
-    background: -moz-linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(27,1,71,1) 55%, rgba(97,0,120,1) 100%);
-    background: -webkit-linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(27,1,71,1) 55%, rgba(97,0,120,1) 100%);
-    background: linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(27,1,71,1) 55%, rgba(97,0,120,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000011",endColorstr="#610078",GradientType=1);
+        background: -moz-linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(1,19,71,1) 55%, #00475d 100%);
+        background: -webkit-linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(1,19,71,1) 55%, #00475d 100%);
+        background: linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(1,19,71,1) 55%, #00475d 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000011",endColorstr="#000278",GradientType=1); 
         height: 90%;
         .title{
             display: flex;
-            float: right;
-            margin-right: 150px;
             justify-content: center;
             height: 100%;
             flex-direction: column;
@@ -71,13 +70,17 @@ header{
             a:hover{
                 color: #000000;
             }
+            fa-icon{
+                font-size: 20px;
+            }
             .curriculum{
-                background-color: #333;
+                background-color: rgb(28, 34, 60);
                 padding: 5px;
                 border-radius: 5px;
                 width: fit-content;
                 fa-icon{
                     margin-left: 5px;
+                    font-size: 17px;
                 }
             }
             .curriculum:hover{
@@ -92,7 +95,7 @@ header{
         align-items: center;
         justify-content: center;
         a{
-            animation: up_and_down 300ms infinite 500ms alternate;
+            animation: up_and_down 400ms infinite ease-in-out 500ms alternate;
             text-decoration: none;
             color: white;
             display: flex;
@@ -101,4 +104,8 @@ header{
             justify-content: center;
         }
     }
+}
+hr{
+    margin: 0;
+    padding: 0;
 }

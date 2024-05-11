@@ -1,0 +1,23 @@
+h2{
+    color: white;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+}
+section{
+    color:white;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    div{
+        width: 48%;
+        h3{
+            font-size: 30px;
+            margin: 0;
+            text-align: left;
+        }
+    }
+}

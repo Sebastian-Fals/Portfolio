@@ -1,0 +1,24 @@
+@if (preview.name != null) {
+    <img src="{{preview.name}}" alt="{{preview.alt}}">
+}
+<div>
+    <h3>{{title}}</h3>
+    @if (icons.length != 0) {
+        <div class="icons">
+            @for (icon of icons; track $index) {
+                <fa-icon [icon]='icon'/>
+            }
+        </div>
+    }@else {
+        <b>¡No hay tecnologias!</b>
+    }
+    <p>{{description}}</p>
+    <div class="buttons">
+        @if (code != '') {
+            <a href="{{code}}" target="_blank"><fa-icon [icon]="faGithub"/> Código</a>
+        }
+        @if(url != ''){
+            <a href="{{url}}" target="_blank"><fa-icon [icon]="faEye"/> Ver</a>
+        }
+    </div>
+</div>

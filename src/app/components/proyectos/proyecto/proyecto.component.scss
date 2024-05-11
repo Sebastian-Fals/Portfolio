@@ -1,0 +1,39 @@
+img{
+    max-width: 45%;
+    border-radius: 8px;
+    box-shadow: 7px 7px 14px #00475d;
+}
+div{
+    max-width: 45%;
+    h3{
+        font-size: 30px;
+        margin: 0;
+    }
+    p{
+        text-align: justify;
+    }
+    .icons{
+        margin: 0;
+        margin-top: 10px;
+        max-width: none;
+        fa-icon{
+            font-size: 30px;
+        }
+    }
+    .buttons{
+        display: block;
+        max-width: none;
+        width: 100%;
+        a{
+            text-decoration: none;
+            color: white;
+            background-color: #00475d;
+            padding: 5px;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+        a:hover{
+            background-color: rgb(0, 15, 26);
+        }
+    }
+}
