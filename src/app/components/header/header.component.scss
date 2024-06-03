@@ -1,111 +1,127 @@
-@keyframes left_to_position_image{
-    to{
-        left: 20dvw;
-    }
+@keyframes left_to_position_image {
+  to {
+    left: 20dvw;
+  }
 }
-@keyframes right_to_position_title{
-    from{
-        left: 100dvw;
-    }
-    to{
-        left: 35dvw;
-    }
+@keyframes right_to_position_title {
+  from {
+    left: 100dvw;
+  }
+  to {
+    left: 35dvw;
+  }
 }
-@keyframes up_and_down{
-    to{
-        transform: translateY(5px);
-    }
+@keyframes up_and_down {
+  to {
+    transform: translateY(5px);
+  }
 }
 
-header{
-    height: 100dvh;
-    .header{
-        background: rgb(0,0,17);
-        background: -moz-linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(1,19,71,1) 55%, #00475d 100%);
-        background: -webkit-linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(1,19,71,1) 55%, #00475d 100%);
-        background: linear-gradient(125deg, rgba(0,0,17,1) 0%, rgba(1,19,71,1) 55%, #00475d 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000011",endColorstr="#000278",GradientType=1); 
-        height: 90%;
-        .title{
-            display: flex;
-            justify-content: center;
-            height: 100%;
-            flex-direction: column;
-            div{
-                position: relative;
-                animation: right_to_position_title 1s ease-out 500ms both;
-            }
-            img{
-                border-radius: 100%;
-                width: 150px;
-                position: absolute;
-                left: -150px;
-                animation: left_to_position_image 1s ease-out 500ms forwards;
-            }
-            h1{
-                padding: 0;
-                margin: 0;
-                color: white;
-                font-size: 64px;
-            }
-            h3{
-                padding: 0;
-                margin: 0;
-                color: white;
-            }
-            .row{
-                display: flex;
-                margin-top: 10px;
-            }
-            a{
-                text-decoration: none;
-                color: white;
-                margin-right: 7px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: 0;
-                font-size: 17px;
-            }
-            a:hover{
-                color: #000000;
-            }
-            fa-icon{
-                font-size: 20px;
-            }
-            .curriculum{
-                background-color: rgb(28, 34, 60);
-                padding: 5px;
-                border-radius: 5px;
-                width: fit-content;
-                fa-icon{
-                    margin-left: 5px;
-                    font-size: 17px;
-                }
-            }
-            .curriculum:hover{
-                background-color: #000000;
-                color: white;
-            }
-        }
-    }
-    .shortcut{
+header {
+  height: 100dvh;
+  margin-bottom: 30px;
+  .header {
+    background: rgb(0, 0, 17);
+    background: -moz-linear-gradient(
+      125deg,
+      rgba(0, 0, 17, 1) 0%,
+      rgba(1, 19, 71, 1) 55%,
+      #00475d 100%
+    );
+    background: -webkit-linear-gradient(
+      125deg,
+      rgba(0, 0, 17, 1) 0%,
+      rgba(1, 19, 71, 1) 55%,
+      #00475d 100%
+    );
+    background: linear-gradient(
+      125deg,
+      rgba(0, 0, 17, 1) 0%,
+      rgba(1, 19, 71, 1) 55%,
+      #00475d 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000011",endColorstr="#000278",GradientType=1);
+    height: 90%;
+    .title {
+      display: flex;
+      justify-content: center;
+      height: 100%;
+      flex-direction: column;
+      div {
+        position: relative;
+        animation: right_to_position_title 1s ease-out 500ms both;
+      }
+      img {
+        border-radius: 100%;
+        width: 150px;
+        position: absolute;
+        left: -150px;
+        animation: left_to_position_image 1s ease-out 500ms forwards;
+      }
+      h1 {
+        padding: 0;
+        margin: 0;
+        color: white;
+        font-size: 64px;
+      }
+      h3 {
+        padding: 0;
+        margin: 0;
+        color: white;
+      }
+      .row {
         display: flex;
-        height: 10%;
+        margin-top: 10px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+        margin-right: 7px;
+        display: flex;
         align-items: center;
         justify-content: center;
-        a{
-            animation: up_and_down 400ms infinite ease-in-out 500ms alternate;
-            text-decoration: none;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        padding: 0;
+        font-size: 17px;
+      }
+      a:hover {
+        color: #000000;
+      }
+      fa-icon {
+        font-size: 20px;
+      }
+      .curriculum {
+        background-color: rgb(28, 34, 60);
+        padding: 5px;
+        border-radius: 5px;
+        width: fit-content;
+        fa-icon {
+          margin-left: 5px;
+          font-size: 17px;
         }
+      }
+      .curriculum:hover {
+        background-color: #000000;
+        color: white;
+      }
     }
+  }
+  .shortcut {
+    display: flex;
+    height: 10%;
+    align-items: center;
+    justify-content: center;
+    a {
+      animation: up_and_down 400ms infinite ease-in-out 500ms alternate;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
 }
-hr{
-    margin: 0;
-    padding: 0;
+hr {
+  margin: 0;
+  padding: 0;
 }
